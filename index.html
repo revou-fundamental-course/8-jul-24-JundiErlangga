@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+
+    <header class="judul">
+        <h1 class="judul">Kalkulator BMI</h1>
+        <hr>
+    </header>
+
+    <main>
+        <section class="kiri">
+            <article class="penjelasan">
+                Badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat bada ideal juga menandakan kondisi tubuh yang sehat. <br>
+                Yuk, hitung sekarang di kaluklator BMI.
+            </article>
+    
+            <section class="form-data">
+                <form action="" name="form-BMI">
+                    <div class="input-kelamin">
+                        <b>Jenis Kelamin</b>
+                        <div class="opsi-kelamin">
+                            <input type="radio" name="Jenis-kelamin" id="laki-laki" value="laki-laki">laki-laki 
+                            <input type="radio" name="Jenis-kelamin" id="perempuan" value="perempuan">perempuan
+                        </div>
+                    </div>
+
+                    <div class="inputan">
+                        <b>Berat Badan (kg)</b><br>
+                        <input type="number" class="isian" id="input-berat" name="berat">
+                    </div>
+
+                    <div class="inputan">
+                        <b>Usia (tahun)</b><br>
+                        <input type="number" class="isian" id="input-usia" name="usia">
+                    </div>
+
+                    <div class="inputan">
+                        <b>Tinggi Badan (m)</b><br>
+                        <input type="number" class="isian" id="input-tinggi" name="tinggi">
+                    </div>
+
+                    <div class="tombol-submit-reset">
+                        <a href="#hasil-angka">
+                        <button onclick="validasi()" class="tombol-selain-reset" >
+    
+                            Hitung BM
+                            
+                        </button>
+                        </a>
+                        <input type="reset" id="tombol-reset">
+                    </div>
+                </form>
+            </section>
+    
+            <article class="penjelasan">
+                <header>Keunggulan fitur</header>
+                <div class="Keunggulan-fitur">
+                    <ol>
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program penurunan berat badan </li>
+                    </ol>
+                </div>
+                <div>
+                    <div>
+                        Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                    </div>
+                    <br>
+                    <div>
+                        Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M^2.
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <section class="kanan">
+            <article class="hasil">
+                <header class="judul-hasil">
+                    <h1>Hasil</h1>
+                </header>
+    
+                <section class="hasil-kalkulasi">
+                    <p>Hasil Kalkulasi BMI Anda adalah</p>
+                    <h2 id="hasil-angka">----</h2>
+                    <p id="ringkasan"></p>
+                    <button class="tombol-selain-reset">Download Hasil BMI</button>
+                </section>
+    
+                <article class="penjelasan-hasil">
+                    <p class="penjelasan" id="antara"></p>
+                    <p class="penjelasan" id="solusi"></p>
+                    <div>
+                        <button class="tombol-selain-reset">Konsultasi Ahli Gizi Via Aplikasi</button>
+                        <button class="tombol-selain-reset">Registrasi Online Ahli Gizi</button>
+                    </div>
+                    <div class="penjelasan" id="diclaimer">
+                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+                    </div>
+                </article>
+                
+                <section class="box-penyakit">
+                    <div id="judul-daftar-penyakit"></div>
+                    <p id="penyakit-penyakit1"></p>
+                    <p id="penyakit-penyakit2"></p>
+                    <p id="penyakit-penyakit3"></p>
+                    <p id="penyakit-penyakit4"></p>
+                    <button class="tombol-selain-reset">Konsultasi Dokter Via Aplikasi</button>
+                    <button class="tombol-selain-reset">Registrasi Online Sekarang</button>
+                </section>
+            </article>
+            <div class="footer">
+                Download Aplikasi
+                <div class="store">
+                    <div><img src="Assets/download-di-app.png" id="app-store" alt=""></div>
+                    <div><img src="Assets/download-di-play.png" id="play-store" alt=""></div>
+                </div>
+            </div> 
+        </section>   
+    </main>
+    
+    <footer>
+        <hr>
+        <div class="credit">
+            <div>Dibuat Oleh:</div> 
+            <div class="credit"><b>Jundi Erlangga Luhur Prawira</b></div>
+        </div>
+        
+    </footer>
+</body>
+</html>
